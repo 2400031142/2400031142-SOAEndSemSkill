@@ -1,0 +1,14 @@
+Project: Ride Sharing Platform - Round Robin Load Balancing
+
+Purpose:
+Demonstrate how an API Gateway distributes ride requests among multiple
+instances of the same Spring Boot service using Eureka discovery and Spring
+Cloud LoadBalancer.
+
+Flow:
+Postman -> API Gateway (8000) -> lb://RIDE-SERVICE -> Ride Service (8081/8082/8083)
+                           -> lb://RIDER-SERVICE -> Rider Service (8084)
+Eureka Server (8761) registers and discovers the service instances.
+
+Import all four Maven projects into STS. See README.txt for the full run order
+and Postman test instructions.

@@ -1,0 +1,117 @@
+{
+  "info": {
+    "name": "Ride Sharing - Round Robin Load Balancing",
+    "_postman_id": "a37c2d21-4b92-4c20-a65e-9e1200012345",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ride Service through Gateway (Round Robin)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/rides",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "rides"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Rider Service through Gateway",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/riders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "riders"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Direct Ride Instance - 8081",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/rides",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "rides"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Direct Ride Instance - 8082",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8082/rides",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "rides"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Direct Ride Instance - 8083",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/rides",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "rides"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Direct Rider Service",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8084/riders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8084",
+          "path": [
+            "riders"
+          ]
+        }
+      }
+    }
+  ]
+}
